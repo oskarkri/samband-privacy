@@ -103,7 +103,7 @@ ingen annonser, ingen sporing og ingen tredjeparts datainnsamling.</p>
 <ul>
   <li><strong>Tale</strong> du sender mens du holder PTT-kontrollen. Lyden videreformidles til
       medlemmene i kanalen din over en TLS-kryptert forbindelse. Serveren holder kortlivede
-      relay-buffere (i størrelsesorden minutter) slik at enheter som kobler til igjen kan hente seg
+      relay-buffere (i størrelsesorden minutter) slik at enheter som kobler til igjen, kan hente seg
       inn; utvikleren lagrer ingenting.</li>
   <li><strong>Tekstmeldinger og bilder</strong> du sender, videreformidlet på samme måte.</li>
   <li><strong>Identiteten din på den serveren:</strong> brukernavnet du velger og et
@@ -120,7 +120,7 @@ egen organisasjon. Utvikleren av Samband har ingen tilgang til dem.</p>
 <ul>
   <li><strong>Nylig mottatt lyd og meldingshistorikk</strong>, lagret lokalt i en kryptert database
       slik at du kan spille av det du gikk glipp av.</li>
-  <li><strong>Innstillinger og serverprofiler</strong>, inkludert sertifikat-tillitsvalg.</li>
+  <li><strong>Innstillinger og serverprofiler</strong>, inkludert hvilke server-sertifikater du har valgt å stole på.</li>
   <li><strong>En diagnostikklogg</strong> (tilkoblingshendelser, tellere fra lydkjeden). Den
       forlater aldri enheten med mindre du selv bruker eksport-/delingsfunksjonen — og da går den
       bare dit du velger å sende den.</li>
@@ -137,7 +137,7 @@ egen organisasjon. Utvikleren av Samband har ingen tilgang til dem.</p>
 
 <h2>Mikrofontilgang</h2>
 <p>Samband bruker mikrofonen bare mens du aktivt sender (eller når du selv slår på en håndfri
-sendemodus). Lyden som fanges, kodes og sendes til serveren du har konfigurert; den brukes ikke til
+sendemodus). Lyd som fanges opp, blir kodet og sendt til serveren du har konfigurert, og brukes ikke til
 noe annet.</p>
 
 <h2>Kildekode</h2>
