@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samband — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6;
+         color: #1c1c1e; background: #ffffff; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #d1d1d6; padding-bottom: 0.25rem; }
+  .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 2rem; }
+  hr.lang-sep { margin: 3rem 0; border: none; border-top: 2px solid #1c1c1e; }
+  ul { padding-left: 1.25rem; }
+  code { background: #f2f2f7; padding: 0.1rem 0.3rem; border-radius: 4px; font-size: 0.9em; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #1c1c1e; }
+    h2 { border-bottom-color: #3a3a3c; }
+    .meta { color: #98989d; }
+    hr.lang-sep { border-top-color: #f2f2f7; }
+    code { background: #2c2c2e; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Samband — Privacy Policy</h1>
+<p class="meta">Version 1.0 · Effective 2026-08-25 · <a href="#norsk">Norsk versjon nedenfor</a></p>
+
+<h2>The short version</h2>
+<p>Samband is a push-to-talk (PTT) voice communication app. <strong>The app developer operates no
+servers and receives no data from you.</strong> Everything the app sends goes exclusively to the
+PTT server that you (or your organisation) configure in the app. There are no analytics, no ads,
+no tracking, and no third-party data collection of any kind.</p>
+
+<h2>What the app sends to your configured server</h2>
+<ul>
+  <li><strong>Voice audio</strong> you transmit while pressing the PTT control. Audio is relayed to
+      the members of your channel over a TLS-encrypted connection. The server keeps short-lived
+      relay buffers (on the order of minutes) so that devices that reconnect can catch up; the app
+      developer stores nothing.</li>
+  <li><strong>Text messages and images</strong> you send, relayed to channel members the same way.</li>
+  <li><strong>Your identity on that server:</strong> the username you choose and a client
+      certificate that the app generates on your device. The server uses these to recognise you
+      between sessions.</li>
+  <li><strong>A push token</strong> (Apple Push Notification service, push-to-talk type), registered
+      with your configured server so it can wake the app when someone speaks while the app is in
+      the background.</li>
+</ul>
+<p>Who can read this data is governed by whoever operates the server you connect to — typically
+your own organisation. The developer of Samband has no access to it.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li><strong>Recent received audio and message history</strong>, stored locally in an encrypted
+      database so you can replay what you missed.</li>
+  <li><strong>Settings and server profiles</strong>, including certificate trust decisions.</li>
+  <li><strong>A diagnostics log</strong> (connection events, audio pipeline counters). It never
+      leaves your device unless you explicitly use the export/share function — and then it goes
+      only where you choose to send it.</li>
+</ul>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No analytics or telemetry to the developer or any third party.</li>
+  <li>No advertising and no advertising identifiers.</li>
+  <li>No tracking across apps or websites.</li>
+  <li>No use of your location.</li>
+  <li>No sale of data — there is nothing to sell.</li>
+</ul>
+
+<h2>Microphone access</h2>
+<p>Samband uses the microphone only while you actively transmit (or when you explicitly enable a
+hands-free transmit mode). Captured audio is encoded and sent to your configured server; it is not
+used for anything else.</p>
+
+<h2>Source code</h2>
+<p>Samband is licensed under the GNU General Public License v3. You can request the corresponding
+source code through the contact channel below.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app: open an issue in the
+<a href="https://github.com/oskarkri/samband-privacy/issues">samband-privacy repository</a>.</p>
+
+<h2>Changes</h2>
+<p>Changes to this policy are published on this page with a new version number and date; the
+changelog below lists every revision.</p>
+
+<hr class="lang-sep" id="norsk">
+
+<h1 lang="no">Samband — Personvernerklæring</h1>
+<p class="meta" lang="no">Versjon 1.0 · Gjelder fra 2026-08-25</p>
+
+<div lang="no">
+<h2>Kortversjonen</h2>
+<p>Samband er en app for push-to-talk (PTT) talekommunikasjon. <strong>Utvikleren av appen driver
+ingen servere og mottar ingen data fra deg.</strong> Alt appen sender, går utelukkende til den
+PTT-serveren du (eller organisasjonen din) konfigurerer i appen. Det finnes ingen analyse,
+ingen annonser, ingen sporing og ingen tredjeparts datainnsamling.</p>
+
+<h2>Hva appen sender til serveren du konfigurerer</h2>
+<ul>
+  <li><strong>Tale</strong> du sender mens du holder PTT-kontrollen. Lyden videreformidles til
+      medlemmene i kanalen din over en TLS-kryptert forbindelse. Serveren holder kortlivede
+      relay-buffere (i størrelsesorden minutter) slik at enheter som kobler til igjen kan hente seg
+      inn; utvikleren lagrer ingenting.</li>
+  <li><strong>Tekstmeldinger og bilder</strong> du sender, videreformidlet på samme måte.</li>
+  <li><strong>Identiteten din på den serveren:</strong> brukernavnet du velger og et
+      klientsertifikat appen genererer på enheten din. Serveren bruker disse til å kjenne deg igjen
+      mellom økter.</li>
+  <li><strong>Et push-token</strong> (Apples push-varslingstjeneste, push-to-talk-type), registrert
+      hos serveren du har konfigurert, slik at den kan vekke appen når noen snakker mens appen er i
+      bakgrunnen.</li>
+</ul>
+<p>Hvem som kan lese disse dataene, styres av den som drifter serveren du kobler til — typisk din
+egen organisasjon. Utvikleren av Samband har ingen tilgang til dem.</p>
+
+<h2>Hva som blir på enheten din</h2>
+<ul>
+  <li><strong>Nylig mottatt lyd og meldingshistorikk</strong>, lagret lokalt i en kryptert database
+      slik at du kan spille av det du gikk glipp av.</li>
+  <li><strong>Innstillinger og serverprofiler</strong>, inkludert sertifikat-tillitsvalg.</li>
+  <li><strong>En diagnostikklogg</strong> (tilkoblingshendelser, tellere fra lydkjeden). Den
+      forlater aldri enheten med mindre du selv bruker eksport-/delingsfunksjonen — og da går den
+      bare dit du velger å sende den.</li>
+</ul>
+
+<h2>Hva appen ikke gjør</h2>
+<ul>
+  <li>Ingen analyse eller telemetri til utvikleren eller noen tredjepart.</li>
+  <li>Ingen annonser og ingen annonse-identifikatorer.</li>
+  <li>Ingen sporing på tvers av apper eller nettsteder.</li>
+  <li>Ingen bruk av posisjonen din.</li>
+  <li>Intet salg av data — det finnes ingenting å selge.</li>
+</ul>
+
+<h2>Mikrofontilgang</h2>
+<p>Samband bruker mikrofonen bare mens du aktivt sender (eller når du selv slår på en håndfri
+sendemodus). Lyden som fanges, kodes og sendes til serveren du har konfigurert; den brukes ikke til
+noe annet.</p>
+
+<h2>Kildekode</h2>
+<p>Samband er lisensiert under GNU General Public License v3. Du kan be om tilhørende kildekode via
+kontaktkanalen nedenfor.</p>
+
+<h2>Kontakt</h2>
+<p>Spørsmål om denne erklæringen eller appen: opprett en sak i
+<a href="https://github.com/oskarkri/samband-privacy/issues">samband-privacy-repoet</a>.</p>
+
+<h2>Endringer</h2>
+<p>Endringer i denne erklæringen publiseres på denne siden med nytt versjonsnummer og ny dato;
+endringsloggen nedenfor lister hver revisjon.</p>
+</div>
+
+<h2>Changelog</h2>
+<ul>
+  <li><strong>v1.0</strong> (2026-08-25): First published version. / Første publiserte versjon.</li>
+</ul>
+
+</body>
+</html>
